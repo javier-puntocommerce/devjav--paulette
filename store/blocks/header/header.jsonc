@@ -1,0 +1,164 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-desktop",
+      "flex-layout.row#logopaulette",
+      "sticky-layout#4-desktop"
+    ]
+  },
+
+ 
+
+  "flex-layout.row#2-desktop": {
+    "children": ["notification.bar#home"],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "Envíos gratis dentro de la Zona Metropolitana de Guadalajara a partir de $999.00 m.n. de compra. ",
+      "blockClass":"notif-bar"
+    }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      //"flex-layout.col#logo-desktop",
+      "flex-layout.col#menuprin"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#menuprin": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    //"children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": ["vtex.menu@2.x:menu#categmen"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
+     
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
+    }
+  },
+
+  "flex-layout.row#logopaulette":{
+    "children":[
+      "flex-layout.col#log"      
+    ]
+  },
+  "flex-layout.col#log":{
+    "children":[
+      "logo#principal"
+    ],"props":{
+      "horizontalAlign": "center"
+    }
+  },
+
+  "logo#principal": {
+    "props": {
+      "title": "Logo-principal",  
+      "href": "/",
+      "url": "assets/logo-paulette.png",
+      "width": "250"
+    }
+  }
+
+
+
+
+
+
+}

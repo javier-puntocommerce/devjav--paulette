@@ -1,0 +1,426 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"
+      
+    ]
+  },
+
+  "responsive-layout.tablet":{
+    "children":[
+      "slider-layout#simulatorslider",
+      "flex-layout.row#falda",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titrosa",
+      "flex-layout.row#shelf",
+      "flex-layout.row#titmenta",      
+      "flex-layout.row#shelf",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "responsive-layout.phone":{
+    "children":[
+      "slider-layout#simulatorslider",
+      "flex-layout.row#falda",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titrosa",
+      "flex-layout.row#shelf",
+      "flex-layout.row#titmenta",      
+      "flex-layout.row#shelf",
+      "flex-layout.row#newsletter-mobile"
+    ]
+  },
+
+  "responsive-layout.desktop":{
+    "children":[
+      "slider-layout#simulatorslider",
+      "flex-layout.row#falda",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#titrosa",
+      "flex-layout.row#shelf",
+      "info-card#home",
+      "flex-layout.row#titmenta",      
+      "flex-layout.row#shelf",
+      "info-card#textizq",
+      "flex-layout.row#titrosa2",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "flex-layout.row#falda":{
+    "children":[
+      "image#barfalda"
+    ],"props":{
+      "fullWidth":true
+    }
+  },"image#barfalda":{
+    "props":{
+      "src":"assets/barrafalda.png",
+      "width":"100%"
+    }
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/infomagie.png",
+      "headline": "LA MAGIE DE L´AMOUR PAULETTE",
+      "subhead":"Únete a la celebración de la magia del amor, creaciones de San Valentin para decir. ¡Te Amo!",
+      "callToActionText": "VER CREACIONES",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  /*################## Bandera Rosa #########################*/
+
+  "flex-layout.row#titrosa":{
+    "props":{
+      "blockClass":"home-page-flag"
+    },
+    "children":[
+      "flex-layout.col#hrleft",
+      "flex-layout.col#etiqueta",
+      "flex-layout.col#hrright"
+    ]
+  },
+
+  "flex-layout.col#etiqueta":{
+    "children":[
+      "rich-text#tit1rosa"
+    ],"props":{
+      "horizontalAlign": "center",
+      "blockClass": "flag-title"
+    }
+  },
+
+    "rich-text#tit1rosa":{
+      "props":{
+        "text":"Pasteles Signature",
+        "blockClass": "titulorosa",
+        "textPosition": "center"
+      }
+    },
+
+  "flex-layout.col#hrleft":{
+    "children":[
+      "flex-layout.row#uprosai",
+      "flex-layout.row#downprosai"
+    ],
+    "props":{
+      "blockClass": "hr-left",
+      "width": "37%"
+    }
+  },
+  "flex-layout.row#uprosai":{
+    "props":{
+      "blockClass":"borderosa-top-i"
+    }
+  },
+  "flex-layout.row#downprosai":{
+    "props":{
+      "blockClass":"colrosa-bot-i"
+    }
+  },
+
+  "flex-layout.col#hrright":{
+    "children":[
+      "flex-layout.row#uprosar",
+      "flex-layout.row#downprosar"
+    ],
+    "props":{
+      "blockClass": "hr-right",
+      "width": "37%"
+    }
+  },
+  "flex-layout.row#uprosar":{
+    "props":{
+      "blockClass":"borderosa-top-d"
+    }
+  },
+  "flex-layout.row#downprosar":{
+    "props":{
+      "blockClass":"colrosa-bot-d"
+    }
+  },
+
+  /* Bandera rosa 2 */
+
+  "flex-layout.row#titrosa2":{
+    "props":{
+      "blockClass":"home-page-flag"
+    },
+    "children":[
+      "flex-layout.col#hrleft",
+      "flex-layout.col#etiqueta2",
+      "flex-layout.col#hrright"
+    ]
+  },
+
+  "flex-layout.col#etiqueta2":{
+    "children":[
+      "rich-text#tit2rosa"
+    ],"props":{
+      "horizontalAlign": "center",
+      "blockClass": "flag-title"
+    }
+  },
+
+    "rich-text#tit2rosa":{
+      "props":{
+        "text":"¡Síguenos en insta!",
+        "blockClass": "titulorosa",
+        "textPosition": "center"
+      }
+    },
+
+  /*########################### Bandera menta inicio #############################*/
+
+  "flex-layout.row#titmenta":{
+    "props":{
+      "blockClass":"home-page-flag"
+    },
+    "children":[
+      "flex-layout.col#hrleftM",
+      "flex-layout.col#etiquetaMenta",
+      "flex-layout.col#hrrightM"
+    ]
+  },
+
+  "flex-layout.col#etiquetaMenta":{
+    "children":[
+      "rich-text#tit1menta"
+    ],"props":{
+      "horizontalAlign": "center",
+      "blockClass": "flag-title-menta"
+    }
+  },
+
+    "rich-text#tit1menta":{
+      "props":{
+        "text":"Libre de azúcar",
+        "blockClass": "titulomenta",
+        "textPosition": "center"
+      }
+    },
+
+  "flex-layout.col#hrleftM":{
+    "children":[
+      "flex-layout.row#upmentaizqM",
+      "flex-layout.row#downmentaizqM"
+    ],
+    "props":{
+      "blockClass": "hr-left",
+      "width": "37%"
+    }
+  },
+  "flex-layout.row#upmentaizqM":{
+    "props":{
+      "blockClass":"bordementa-top-i"
+    }
+  },
+  "flex-layout.row#downmentaizqM":{
+    "props":{
+      "blockClass":"colmenta-bot-i"
+    }
+  },
+
+  "flex-layout.col#hrrightM":{
+    "children":[
+      "flex-layout.row#upmentarM",
+      "flex-layout.row#downmentarM"
+    ],
+    "props":{
+      "blockClass": "hr-right",
+      "width": "37%"
+    }
+  },
+  "flex-layout.row#upmentarM":{
+    "props":{
+      "blockClass":"bordementa-top-d"
+    }
+  },
+  "flex-layout.row#downmentarM":{
+    "props":{
+      "blockClass":"bordementa-bot-d"
+    }
+  },
+
+  /*################## Banderas hasta aqui ######################*/
+
+  "info-card#textizq": {
+    "props": {
+      "id": "info-card-izq",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "VIVE LA EXPERIENCIA PAULETTE",
+      "subhead": "Visita nuestras Café Boutiques, Boutiques y Maison Paulette.",
+      "callToActionText": "VER MÁS",
+      "callToActionUrl": "/",
+      "blockClass": "info-card-izq",
+      "textAlignment": "center"
+    }
+  },
+
+  "flex-layout.row#newsletter":{
+    "children":[
+      "flex-layout.col#nl"
+    ],"props":{
+      "fullWidth":false,
+      "horizontalAlign":"center",
+      "blockClass":"rownl"
+    }
+  }, 
+
+  "flex-layout.col#nl":{
+    "children":[
+      "rich-text#titnl",
+      "rich-text#txtnl",
+      "newsletter-form#nlgral"
+    ],"props":{
+      "width": "80%",
+      "horizontalAlign":"center",
+      "blockClass":"colnl"
+    }
+  },
+
+  "rich-text#titnl":{
+    "props":{
+      "text":"¡RECIBE NUESTRAS NOTICIAS MÁS DULCES!",
+      "textPosition":"CENTER",
+      "textAlignment":"center",
+      "blockClass": "titnl"
+    }
+  },
+
+  "rich-text#txtnl":{
+    "props":{
+      "text":"Nuestros hornos te mantendrán indormado de las últimas novedades para rque no te pierdas ninguna de nuestras ezquisitas creaciones",
+      "textPosition":"CENTER",
+      "textAlignment": "center",
+      "blockClass":"txtnl"
+    }
+  },
+  
+  "newsletter-form#nlgral":{
+    "children":[
+      "newsletter-input-email",
+      "newsletter-submit"
+    ],"props":{
+      "blockClass":"news"
+    }
+  },
+
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText": "hola@micorreo.com"
+    }
+  },
+
+  "slider-layout#simulatorslider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "fullWidth": true
+    },
+    "children": [
+      "info-card#slider1"
+    ]
+  }, "info-card#slider1":{
+    "props":{
+      "id": "info-card-sld1",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/bannerindocard.png",
+      "textMode": "rich-text",
+      "headline": "[Pasteles Signature](https://paulette.myvtex.com/pasteles-signature)",
+      "subhead":"# Mademoiselle \n *Cremoso cheesecake horneado con mandarinas aciduladas en la cubierta vuelven sorprendente a esta especialidad de la casa.*",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/pasteles-signature",
+      "blockClass": "ic-sld1"
+    }
+  },
+
+
+"flex-layout.row#newsletter-mobile":{
+  "children":[
+    "rich-text#titnl",
+      "rich-text#txtnl",
+      "newsletter-form#nlgral"
+  ],"props":{
+    "blockClass":"nl-mobile"
+  }
+}
+}
+

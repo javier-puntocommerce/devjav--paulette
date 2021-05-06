@@ -1,0 +1,26 @@
+{
+    "store.custom#layoutme":{
+        "blocks":[
+            "responsive-layout.desktop#adapta"
+        ]
+    },
+    "responsive-layout.desktop#adapta":{
+        "children":[
+            "rich-text#txtresponsive",
+            "image#imgresponsive",
+            "shelf"
+        ] 
+        
+    },
+    "rich-text#txtresponsive":{
+        "props":{
+            "text":"orale"
+        }
+    },
+    "image#imgresponsive":{
+        "props":{
+            "src":"assets/banner-infocard2.png"
+        }
+    }
+
+}

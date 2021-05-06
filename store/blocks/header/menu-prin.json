@@ -1,0 +1,79 @@
+{
+    "vtex.menu@2.x:menu#categmen":{
+        "props": {
+            "experimentalOptimizeRendering": true
+          },
+        "children":[
+            "menu-item#pasteles",
+            "menu-item#gelatinas",
+            "menu-item#libre",
+            "menu-item#individuales",
+            "menu-item#macarons",
+            "menu-item#dulzuras",
+            "menu-item#chocolates"
+        ]
+    },
+
+    "menu-item#pasteles":{
+        "props":{
+            "type": "custom",
+            "href": "/pasteles-signature",
+            "text": "Pasteles Signature",
+            "blockClass":"itemprin"
+        }
+    },
+    "menu-item#gelatinas":{
+        "props":{
+            "type": "custom",
+            "href": "/gelatinas",
+            "text": "Gelatinas",
+            "blockClass":"itemprin"
+        }
+    },
+    "menu-item#libre":{
+        "props":{
+            "type": "custom",
+            "href": "/libre-de-azucar",
+            "text": "Libre de Azúcar",
+            "blockClass":"itemprin"
+        }
+    },
+    "menu-item#individuales":{
+        "props":{
+            "type": "custom",
+            "href": "/postres-infividuales",
+            "text": "Postres Individuales",
+            "blockClass":"itemprin"
+        }
+    },
+    "menu-item#macarons":{
+        "props":{
+            "type": "custom",
+            "href": "/macarons",
+            "text": "Macarons",
+            "blockClass":"itemprin"
+        }
+    },
+    "menu-item#dulzuras":{
+        "props":{
+            "type": "custom",
+            "href": "/pequeñas-dulzuras",
+            "text": "Pequeñas Dulzuras",
+            "blockClass":"itemprin"
+        }
+    },
+    "menu-item#chocolates":{
+        "props":{
+            "type": "custom",
+            "href": "/chocolates",
+            "text": "Chocolates",
+            "blockClass":"itemprin"
+        }
+    }
+
+    
+
+
+
+
+}

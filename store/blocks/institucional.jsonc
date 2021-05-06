@@ -1,0 +1,281 @@
+{
+    "store.custom#institucional":{
+        "blocks":[
+            "flex-layout.row#titulo-institucional",
+            "flex-layout.row#texto-institucional",
+            "flex-layout.row#banners-insitucional",
+            "flex-layout.row#shelf-institucional",
+            "flex-layout.row#infocard-institucional",
+            "flex-layout.row#testimonios-institucional",
+            "flex-layout.row#shelf-institucional-01",
+            "flex-layout.row#tab-layout"
+            
+        ]
+
+    },
+
+    "flex-layout.row#titulo-institucional":{
+        "children":[
+            "rich-text#titulo-institucional"
+        ]
+    },
+
+    "rich-text#titulo-institucional":{
+        "props":{
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "text": "# Alfredo Salcedo \n ## Capacitación VTEX PAPU"
+        }
+    },
+    
+    "flex-layout.row#texto-institucional":{
+        "children":[
+            "rich-text#texto-institucional"
+        ]
+    },
+
+    "rich-text#texto-institucional":{
+        "props":{
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "text": "### It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+        }
+    },
+
+    "flex-layout.row#banners-insitucional":{
+        "children":[
+            "flex-layout.col#slider",
+            "flex-layout.col#banners"
+        ]
+    },
+
+    "flex-layout.col#slider":{
+        "children":[
+            "slider-layout#test"
+        ]
+    },
+
+    "slider-layout#test": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel",
+          "fullWidth": true
+        },
+        "children": [
+            "image#1",
+            "image#2"
+        ]
+      },
+    
+      "image#1": {
+        "props": {
+          "src": "https://westandpearlmx.myvtex.com/arquivos/banner-cuadrado.png"
+        }
+      },
+      "image#2": {
+        "props": {
+          "src": "https://westandpearlmx.myvtex.com/arquivos/banner-cuadrado.png"
+        }
+      },
+
+      "flex-layout.col#banners":{
+          "children":[
+            "image#banner2"
+          ]
+      },
+
+      "image#banner2":{
+          "props":{
+              "src":"https://westandpearlmx.myvtex.com/arquivos/fullbanner-mobile.png"
+          }
+      },
+
+      "flex-layout.row#shelf-institucional":{
+          "children":[
+            "list-context.product-list#alfrdlist"
+          ]
+      },
+
+      "list-context.product-list#alfrdlist": {
+        "blocks": ["product-summary.shelf#alfrd-shelf"],
+        "children": ["slider-layout#testprod"]
+      },
+
+      "slider-layout#testprod": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 4,
+            "phone": 4
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel",
+          "fullWidth": true
+        }
+      },
+
+      "flex-layout.row#infocard-institucional":{
+          "children":[
+              "info-card#ic-institucional"
+          ]
+      },
+
+      "info-card#ic-institucional":{
+        "props": {
+            "textPosition": "left",
+            "headline": "Alfaredo Salcedo",
+            "subhead": "Capacitación VTEX IO",
+            "callToActionText": "Ver Más",            
+            "isFullModeStyle": false,   
+
+            "id": "info-card-example",         
+            "imageUrl": "assets/banner-infocard2.png",            
+            "callToActionUrl": "/sale/d",
+            "blockClass": "info-card-example"
+          }
+      },
+
+      "flex-layout.row#testimonios-institucional":{
+          "children":[
+            "slider-layout#testimonios"
+          ]
+      },
+
+      "slider-layout#testimonios": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel",
+          "fullWidth": true
+        },
+        "children":[
+            "rich-text#testimonio-01",
+            "rich-text#testimonio-02",
+            "rich-text#testimonio-03"
+        ]
+      },
+
+      "rich-text#testimonio-01":{
+          "props":{
+              "text": "## Testimonio-01 \n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas  las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum."
+          }
+      },
+        "rich-text#testimonio-02":{
+            "props":{
+                "text": "## Testimonio-02 \n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas  las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum."
+            }
+        },
+        "rich-text#testimonio-03":{
+            "props":{
+                "text": "## Testimonio-03 \n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas  las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum."
+            }
+        },
+
+    "flex-layout.row#shelf-institucional-01":{
+        "children":[
+            "list-context.product-list#alfrdlist2"
+        ]
+    },
+
+    "list-context.product-list#alfrdlist2": {
+        "blocks": [
+            "product-summary.shelf#alfrd-shelf1"
+        ],
+        "children": [
+            "slider-layout#testprod2"
+        ],
+        "props": {
+            "category": "4"
+        }
+      },
+
+      "slider-layout#testprod2": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 4,
+            "phone": 4
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel",
+          "fullWidth": true
+        }
+      },
+
+    "flex-layout.row#tab-layout":{
+        "children":[
+            "tab-layout#tabs"
+        ]
+    },
+
+    "tab-layout#tabs":{
+        "children":[
+            "tab-list#tabs",
+            "tab-content#tabs"
+        ],
+        "props":{
+            "defaultActiveTabId": "tab1"
+        }
+    },
+
+    "tab-list#tabs":{
+        "children":[
+            "tab-list.item#tab1",
+            "tab-list.item#tab2"
+        ]
+    },
+
+    "tab-list.item#tab1":{
+        "props":{
+            "tabId": "tab1",
+            "label": "Item 01",
+            "defaultActiveTab": true
+        }
+    },
+
+    "tab-list.item#tab2":{
+        "props":{
+            "tabId": "tab2",
+            "label": "Item 02"
+        }
+    },
+
+    "tab-content#tabs":{
+        "children":[
+            "tab-content.item#content1",
+            "tab-content.item#content2"
+        ]
+    },
+    "tab-content.item#content1":{
+        "children":[
+            "image#1"
+        ],
+        "props":{
+            "tabId": "tab1"
+        }
+    },
+    "tab-content.item#content2":{
+        "children":[
+            "image#banner2"
+        ],
+        "props":{
+            "tabId": "tab2"
+        }
+    }
+
+
+
+}

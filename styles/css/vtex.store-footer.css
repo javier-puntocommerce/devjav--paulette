@@ -1,0 +1,29 @@
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-row){
+  background-color: #EFB3CB ;
+  padding: 30px;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--titmenf){
+  color: #ffffff;
+  font-weight: 600;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemfoo){
+  color: #ffffff;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemfoo):hover{
+  color: #000000;
+}

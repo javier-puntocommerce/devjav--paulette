@@ -1,0 +1,373 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}
+
+.nameContainer {
+  justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2E2E2E;
+}
+
+.container {
+  text-align: start;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0.25rem;
+}
+
+
+
+/*##################### Product Summary Styles Start##########################################*/
+
+/* comenté los estilos de .notificationBarContainer en components */
+
+:global(.vtex-store-components-3-x-notificationContent--notif-bar){
+  font-weight: normal;
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+/*##################### Header / Product End #################################*/
+
+/*#################### Breadcrum #############################################*/
+
+
+/*#################### Breadcrum #############################################*/
+
+/*##################### Main Summary / Product Start #################################*/
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-container){
+  width: 80%;
+  margin: 0 auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--product-summary-container){
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* ###################### ajustar imagen ###########################*/
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-image-container){
+  width: 100%;
+}
+
+
+
+/*pruduct specs */
+
+/* product name */
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-name-summary)
+  :global(.vtex-store-components-3-x-productNameContainer--product-name){
+    font-size: 1.5rem;
+  }
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-price-container){
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-price-container)
+  :global(.vtex-product-price-1-x-sellingPriceValue--product-summary-price){
+    font-size: 1rem;
+  }
+
+/* Description */
+
+
+:global(.vtex-flex-layout-0-x-flexRow--buy-description)
+  :global(.vtex-store-components-3-x-productDescriptionTitle){
+    display: none;
+  }
+
+
+/* separadores */
+
+:global(.vtex-flex-layout-0-x-flexRowContent--separador-rosa-top){
+  height: 100%;
+  border-bottom: 1px solid #efb3cb;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--separador-rosa-bot){
+  height: 100%;
+  border-bottom: 1px solid #efb3cb;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+/* Cantidad */
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-summary-container){
+  width: 100%;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--text-cantidad){
+  text-transform: uppercase;
+}
+
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper--cantidad-componente)
+  :global(.vtex-numeric-stepper-container){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper--cantidad-componente)
+    :global(.vtex-numeric-stepper__input){
+      border: none;
+    }
+
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper--cantidad-componente)
+      :global(.vtex-numeric-stepper__minus-button){
+        border-radius: 50%!important;
+        width: 1.5em!important;
+        height: 1.5em;
+        border: 1px solid #000000;
+        background: transparent;
+    }
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper--cantidad-componente)
+        :global(.vtex-numeric-stepper__minus-button__text){
+          color: #000000;
+        }
+
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper--cantidad-componente)
+      :global(.vtex-numeric-stepper__plus-button){
+        border-radius: 50%!important;
+        width: 1.5em!important;
+        height: 1.5em;
+        border: 1px solid #000000;
+        background: transparent;
+      }
+
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper--cantidad-componente)
+        :global(.vtex-numeric-stepper__plus-button__text){
+          color: #000000;
+        }
+
+/* Btn comprar */
+
+:global(.vtex-flex-layout-0-x-flexRowContent--btn-container)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+    :global(.vtex-button){
+  background-color: #EFB3CB;
+  border-radius: 0;
+  border: 1px solid #efb3cb;
+  padding: 1rem;
+}
+/*##################### Main Summary / Detalle producto #################################*/
+
+/* separador detalles */
+
+:global(.vtex-flex-layout-0-x-flexRow--detalles-text-row){
+  width: 80%;
+  margin: 0 auto;
+}
+
+:global(.vtex-rich-text-0-x-container--titulorosa){
+  padding: 1rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--detalles-text-row)
+  :global(.vtex-rich-text-0-x-wrapper--text-detalles){
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--detalles-text-row)
+    :global(.vtex-rich-text-0-x-paragraph--text-detalles){
+      margin-bottom: 0;
+    }
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--divisor-detalle){
+  width: 80%;
+  margin: 0 auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--divisor-detalle)
+  :global(.vtex-flex-layout-0-x-flexCol--divisorleft){
+    border-top: 3.5px solid #efb3cb;
+  }
+:global(.vtex-flex-layout-0-x-flexRow--divisor-detalle)
+  :global(.vtex-flex-layout-0-x-flexCol--divisorright){
+    border-top: 1.5px solid #efb3cb;
+  }
+
+:global(.vtex-flex-layout-0-x-flexRow--product-description-name)
+  :global(.vtex-flex-layout-0-x-flexRowContent--product-description-name){
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+
+
+/*##################### Main Summary / Product End #################################*/
+
+/* Bandera */
+
+:global(.vtex-flex-layout-0-x-flexRow--product-page-flag){
+  width: 80%;
+  margin: 0 auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--flag-title){
+  height: 100%;
+  width: 100%;
+  background: #efb3cb;
+  clip-path: polygon(100% 0, 96% 50%, 100% 100%, 0% 100%, 4% 50%, 0% 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.vtex-rich-text-0-x-container--titulorosa){
+  padding: 9px 0;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--titulorosa){
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+:global(.vtex-flex-layout-0-x-flexRow--borderosa-top-d){
+  height: 100%;
+  border-bottom: 1px solid #efb3cb;
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--borderosa-top-i){
+  height: 100%;
+  border-bottom: 1px solid #efb3cb;
+  width: 100%;
+}
+/*newsletter section*/
+
+:global(.vtex-store-components-3-x-newsletter--newsletter){
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  background-color: #DDE1EA;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+:global(.vtex-store-components-3-x-label--newsletter){
+  color: #000000;
+}
+
+/*##################### Product Summary Styles End############################################*/
+
+
+/* Bandera rosa del home */
+
+:global(.vtex-flex-layout-0-x-flexRow--home-page-flag){
+  width: 95%;
+  margin: 0 auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--flag-title){
+  height: 100%;
+  width: 100%;
+  background: #efb3cb;
+  clip-path: polygon(100% 0, 96% 50%, 100% 100%, 0% 100%, 4% 50%, 0% 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.vtex-rich-text-0-x-container--titulorosa){
+  padding: 9px 0;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--titulorosa){
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+:global(.vtex-flex-layout-0-x-flexRow--borderosa-top-d){
+  height: 100%;
+  border-bottom: 1px solid #efb3cb;
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--borderosa-top-i){
+  height: 100%;
+  border-bottom: 1px solid #efb3cb;
+  width: 100%;
+}
+
+/* Bandera menta del home */
+
+:global(.vtex-flex-layout-0-x-flexColChild--flag-title-menta){
+  height: 100%;
+  width: 100%;
+  background: #89E1D0;
+  clip-path: polygon(100% 0, 96% 50%, 100% 100%, 0% 100%, 4% 50%, 0% 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.vtex-rich-text-0-x-container--titulomenta){
+  padding: 9px 0;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--titulomenta){
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+:global(.vtex-flex-layout-0-x-flexRow--bordementa-top-d){
+  height: 100%;
+  border-bottom: 1px solid #89E1D0;
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--bordementa-top-i){
+  height: 100%;
+  border-bottom: 1px solid #89E1D0;
+  width: 100%;
+}

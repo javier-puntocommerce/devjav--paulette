@@ -1,0 +1,487 @@
+{
+  "vtex.menu@2.x:menu#paulette": {
+    "props": {
+      "orientation": "vertical"
+    
+    },
+    "children": [
+      "menu-item#paulettef",
+      "menu-item#nosotrosf",
+      "menu-item#boutiquesf",
+      "menu-item#maisonf",
+      "menu-item#sweetf",
+      "menu-item#contactof"
+    ]
+  },
+  "menu-item#paulettef":{
+    "props":{
+      "text": "PAULETTE",
+      "blockClass":"titmenf"
+    }
+  },
+  "menu-item#nosotrosf": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-nosotrosf",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Nosotros",
+        "text": "Nosotros"
+      }
+    }
+  },
+  "menu-item#boutiquesf": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-boutiquesf",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Boutiques",
+        "text": "Boutiques"
+      }
+    }
+  },
+  "menu-item#maisonf": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-maisonf",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Maison Paulette",
+        "text": "Maison Paulette"
+      }
+    }
+  },
+  "menu-item#sweetf": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-sweetf",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sweet Catering",
+        "text": "Sweet Catering"
+      }
+    }
+  },
+
+  "menu-item#contactof": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-contf",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Contacto",
+        "text": "Contacto"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#shoponline": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#shoponline",
+      "menu-item#termycond",
+      "menu-item#faqs",
+      "menu-item#formenv",
+      "menu-item#zona",
+      "menu-item#privacidad"
+    ]
+  },
+
+  "menu-item#shoponline":{
+    "props":{
+      "text": "SHOP ONLINE",
+      "blockClass":"titmenf"
+    }
+  },
+
+  "menu-item#termycond": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-termycond",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+
+  "menu-item#faqs": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-faqs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Preguntas Frecuentes",
+        "text": "Preguntas Frecuentes"
+      }
+    }
+  },
+
+  "menu-item#formenv": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-formenv",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Formas de envío",
+        "text": "Formas de envío"
+      }
+    }
+  },
+
+  "menu-item#zona": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-zona",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Zona de cobertura",
+        "text": "Zona de cobertura"
+      }
+    }
+  },
+
+  "menu-item#privacidad": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-privacidad",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Política de privacidad",
+        "text": "Política de privacidad"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#bolsa": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#bolsa",
+      "menu-item#vacantes",
+      "menu-item#aplicacion",
+      "menu-item#contactof"
+    ]
+  },
+  "menu-item#bolsa":{
+    "props":{
+      "text": "BOLSA DE TRABAJO",
+      "blockClass":"titmenf"
+    }
+  },
+
+  "menu-item#vacantes": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-vacnts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Vacantes",
+        "text": "Vacantes"
+      }
+    }
+  },
+
+  "menu-item#aplicacion": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-app",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Apliación en línea",
+        "text": "Apliación en línea"
+      }
+    }
+  },
+
+    "vtex.menu@2.x:menu#creaciones": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#creaciones",
+      "menu-item#pastelesf",
+      "menu-item#gelatinasf",
+      "menu-item#libref",
+      "menu-item#postresf",
+      "menu-item#macaronsf",
+      "menu-item#chocolatesf"
+    ]
+  },
+
+  "menu-item#creaciones":{
+    "props":{
+      "text": "CREACIONES",
+      "blockClass":"titmenf"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#clothing-mobile",
+      "menu-item#decoration-mobile",
+      "menu-item#sale-mobile"
+    ]
+  },
+
+  "menu-item#clothing-mobile": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "vtex.menu@2.x:submenu.accordion#clothing": {
+    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#clothing-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#gelatinasf",
+      "menu-item#libref",
+      "menu-item#postresf",
+      "menu-item#macaronsf",
+      "menu-item#chocolatesf"
+    ]
+  },
+
+  "menu-item#decoration-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Decoration",
+        "text": "Decoration"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+  },
+  "vtex.menu@2.x:submenu.accordion#decoration": {
+    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-decoration-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#termycond",
+      "menu-item#faq",
+      "menu-item#formenv",
+      "menu-item#zona",
+      "menu-item#privacidad"
+    ]
+  },
+
+  "menu-item#sale-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+  },
+  "vtex.menu@2.x:submenu.accordion#sale": {
+    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-sale-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#termycond",
+      "menu-item#faq",
+      "menu-item#formenv",
+      "menu-item#zona",
+      "menu-item#privacidad"
+    ]
+  },
+
+  "menu-item#pastelesf": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-pasteles",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Pasteles Signature",
+        "text": "Pasteles Signature"
+      }
+    }
+  },
+
+  "menu-item#gelatinasf": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-gelatinas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Gelatinas",
+        "text": "Gelatinas"
+      }
+    }
+  },
+
+  "menu-item#libref": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-libre",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Libre de Azúcar",
+        "text": "Libre de Azúcar"
+      }
+    }
+  },
+
+  "menu-item#postresf": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-postres",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Postres Individuales",
+        "text": "Postres Individuales"
+      }
+    }
+  },
+
+  "menu-item#macaronsf": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-sweat-macarons",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Macarons",
+        "text": "Macarons"
+      }
+    }
+  },
+
+  "menu-item#chocolatesf": {
+    "props": {
+      "blockClass":"itemfoo",
+      "id": "menu-item-choco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Chocolates",
+        "text": "Chocolates"
+      }
+    }
+  },
+
+  "image#logofooter":{
+    "props":{
+      "src":"assets/logofoo.png"
+    }
+  }
+}
